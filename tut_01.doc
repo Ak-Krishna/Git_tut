@@ -1,0 +1,39 @@
+//day 01
+$git init                                        --> used to initialized local repository
+$git congif --global user.name "username"        --> To set user name for structure  
+$git config --global user.email "user mail"      --> To set user email 
+$git config --global user.name                   --> used to check username
+$git congif --global user.email                  --> used to check user email
+
+
+//day 02
+$git add .                                        --> used to stage all files of working directory
+$git add -a                                       --> Same uesd to stage all files
+$git add "filename"                               --> usedd to stage particular file w.r.t filename given
+$git commit -m "provide message "                 --> used to commit file to local repository
+$git commit -a -m "message"                       --> used to directly commit file from working directory to local directory
+
+
+//day 03 diff between files present in working directory and at staging area
+
+$git diff filename                               -->used to display/see difference between files.
+
+ a/tut_01.doc b/tut_01.doc
+index 1e6b59b..d1f2908 100644
+--- a/tut_01.doc                              --> represent source file missing some lines(stage file)
++++ b/tut_01.doc                              --> represent desc file has added some lines (working directory)
+
+a/tut_01.doc                         -->file represent source (file at staging area)
+b/tut_01.doc                         -->file represent destination(file at working directory)
+1e6b59b                              --> hashcode of file at source
+d1f2908                              --> hashcode of file at destination
+100644                               --> first three digit represetn type of file(100) and last three digit represent user permisson(644)
+                             6 - for user (rw)
+                             4 - for groups(r)
+                             4 -for other(r)
+
+rule: 
+      a) if any line prefix with space it means unchanged file (there is no changes made in file)
+      b) if any line(file) prefix with (-) it means something removed from file 
+      c) of any line(file) prefix with (+ ) it means something added in file(working dire)
+
