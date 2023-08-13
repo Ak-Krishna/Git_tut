@@ -1,0 +1,30 @@
+last commit represent by HEAD
+
+$git diff HEAD tut_01.doc                 --> used to see diff between working dir file and local dir file
+$git diff --staged HEAD "filename"        --> used to see diff between staged file and local dir fil w.r.t provided filename
+$git log --oneline                        --> used to log/display all commits which we have in last days
+
+if we have no.of commits then we can see diff with the help of commitid
+
+$git diff "commitid" "filename"          --> used to see difference between working dir file and specific commited file w.r.t commitid
+$git diff a9f526c tut_01.doc             --> check diff of file(tut_01) of working dir and commited file w.r.t commitid 'a9f526c'
+
+$git diff --staged a9f526c               --> used to see difference between staged file and specific commited file w.r.t commitid
+
+$git diff commitid1 commitid2 filename   --> used to see difference between two commited files
+$ git diff a9f526c  c9f526d   tut_01.doc --> see diff of file of last commit and present commit
+
+
+//difference between two branches
+$git diff master test                    --> see difference between master branch and test branch
+
+
+//Remove files from working dir,stage area
+$ls                                    --> list all files present in working directory
+$git ls-files                              --> list all files present at staging area
+$git rm "filename"                         --> removed file with particular filename
+$git rm -r .                               --> removed all files from working dir and staged area
+
+//remove files from staged area
+$git rm --cached kishan.txt                --> remove file from staged area
+$rm kishan.txt                             --> remove file from working directory
