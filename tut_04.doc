@@ -1,0 +1,10 @@
+- git branching is used for parallel developement.
+- if we create a new branch it will inheritate all files and commits of main branch
+- before switch to another branch, you should commit all changes in current branch,
+  if you did not then all changes will impacted to another branch too
+  
+$git branch                  --> use to see all branch
+$git branch "branchname"     --> use to create branch 
+$git checkout "branchname"   --> use to switch between two branches
+$git checkout -b "bn"        --> used to create and switch to particular branch
+
