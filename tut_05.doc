@@ -1,0 +1,20 @@
+$git log --oneline --graph                      --> Used to provide a graph of commits 
+$git branch -d branchname                       --> use to delete specific branch w.r.t branchname
+
+
+//Normal merge
+- from where the branch is created that commit(master) called as base commit
+- in normal merge we have to do a merge commit when we merge two branches
+- in normal merge we have to execute only one command to merge branch i.e $git merge branchname
+- in normal merge we can directly push brach to remote repository
+- in normal merge conflits between files will be encountered
+
+// Rebase 
+- when we do rebase the commits of feature branch are attached to master branch main commit 
+- always switch to that brach which brach you are rebasing to master branch
+- use command $git rebase master
+- after rebase the head is point to new commit of rebased branch
+- the commit id will change after rebase 
+- after rebase you have to switch to master branch for merging the two branch
+- use command $git merge feature 
+- rebase is used to overcome conflicts

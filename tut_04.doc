@@ -6,5 +6,19 @@
 $git branch                  --> use to see all branch
 $git branch "branchname"     --> use to create branch 
 $git checkout "branchname"   --> use to switch between two branches
-$git checkout -b "bn"        --> used to create and switch to particular branch
+$git checkout -b "bn"        --> use to create and switch to particular branch
+$echo a.txt b.txt            --> use to create files
 
+//Merging
+a) fast-forward merge:
+   - we will not touch master branch once we create a another brach 
+   - we only do changes in feature branch and then merge it to master branch, it's called as FF merge
+   - we will not face to any conflicts
+   - $git merge feature                 --> used to merge to branches
+
+b) Three-way merge:
+   - we chan touch master branch once we create a another brach 
+   - we  do changes in feature and master branch and then merge it to master branch.
+   - we will face lots of  conflicts
+
+- always at the time of merging you should switch to master branch
